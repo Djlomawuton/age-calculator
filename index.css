@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Italic;
+    src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+
+* ,*::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    font-size: 32px ;
+    font-weight: 400i;
+    background-color: hsl(0, 0%, 94%);
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 300px;
+    padding: 20px;
+    border-radius: 5% 5% 25% 5%;
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.card1 {
+    width: 90%;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+hr {
+    border: 0.2px solid rgba(0, 0, 0, 0.103);
+}
+
+.hr {
+    position: relative;
+    height: 25px;
+    border: 1px solid white;
+}
+
+.img {
+    background-color: hsl(259, 100%, 65%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: calc((100% - 35px)/2);
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+}
+
+.nom {
+    font-size: 0.2em;
+    color: rgba(0, 0, 0, 0.651);
+}
+
+.nom,
+input {
+    font-weight: 700;
+}
+
+input {
+    width: 65px;
+    height: 26px;
+    margin-top: 3px;
+    padding-left: 6px;
+}
+
+input:focus-visible {
+    border-color: none;
+}
+
+.alert {
+    font-size: 0.2em;
+    color: hsl(0, 100%, 67%);
+}
+
+.hidden {
+    display: none;
+}
+
+.card2 {
+
+}
+
+.age {
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: Italic;
+}
+
+.age:nth-child(1) {
+    margin-top: 16px;
+}
+
+.nombre {
+    color: hsl(259, 100%, 65%);
+}
+
+.shake-vertical {
+    animation: shake-vertical 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes shake-vertical {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+        transform: translateY(8px);
+    }
+    80% {
+        transform: translateY(6.4px);
+    }
+    90% {
+        transform: translateY(-6.4px);
+    }
+}
